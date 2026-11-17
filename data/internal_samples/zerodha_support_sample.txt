@@ -1,0 +1,13 @@
+SAMPLE internal support export - Zerodha demo (illustrative tickets, not real customer data)
+Ticket 1042: User confused about brokerage charges on F&O trades; says fee breakup is unclear and cost was higher than expected
+Ticket 1043: App was slow during market open; user reports order page not working at 9:15 peak time - complaint
+Ticket 1044: User waiting 4 days for fund withdrawal response; delay in support reply, follow up pending
+Ticket 1045: Request: please add price alerts on the watchlist; user wants this feature badly
+Ticket 1046: User switched part of trading to another platform offering lower charges; lost active trader
+Ticket 1047: New investor not sure about demat account process steps; documents required confusion
+Ticket 1048: User happy with the learning content; says Varsity is excellent and recommended us to friends
+Ticket 1049: Complaint about chart loading error during volatility; poor experience, wants it fixed
+Ticket 1050: User asking about charges for pledge and DP fees; price clarity question again
+Ticket 1051: Suggestion: add a portfolio health report feature; request from long-term investor
+Ticket 1052: Support response was slow on KYC re-verification; user frustrated with waiting time
+Ticket 1053: User chose a competitor for options analytics tools; says we should have advanced option chain features

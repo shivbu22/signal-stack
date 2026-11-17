@@ -1,0 +1,330 @@
+
+===== 2026-11-17T02:25:37+00:00 · setup_research · company=None · success =====
+Fetched homepage https://www.meetuniversity.com/ (HTTP 200)
+Fetched internal page https://www.meetuniversity.com/about
+Fetched internal page https://www.meetuniversity.com/
+Industry classified as 'Study-abroad & admissions consulting' (archetype: edtech-services) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Google Meet
+S1 seed article off-topic, skipped: Meet the Parents
+S1 seed article off-topic, skipped: Meet the Robinsons
+S1 seed article off-topic, skipped: American Association of Political Consultants
+S1 Wikipedia graph: 127 candidate names so far
+S3 news corpus mining (Bing + Google News text): 259 candidate names so far
+S2 listicle mining: 313 candidate names total
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Whatsapp (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Outlookbusiness (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlookmoney (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlooktraveller (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlookhindi (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Api (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK BUSINESS (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK MONEY (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK TRAVELLER (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK TRAVELLER EATS (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Print subscription (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Trading Strategies (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Technical Analysis (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: F&O Expiry Calendar (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Gold Rates Today (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: SIP Calculator (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Spotify (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Healthshots (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Ottplay (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Slurrp (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Htsmartcast (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Fabplay (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Shine (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: हिंदी (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: मराठी (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Download (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Itunes (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Loksatta (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Jansatta (signals: listicle-link, mentions: 1)
+Discovery complete: 0 verified competitors
+Competitor discovery complete: 0 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: edtech-services)
+Signal Stack assembled: 8 sources across Customers / Competitors / Market / Internal
+
+===== 2026-11-17T02:30:14+00:00 · crawl · company=1 · success =====
+Fetched homepage https://www.meetuniversity.com/ (HTTP 200)
+Fetched internal page https://www.meetuniversity.com/about
+Fetched internal page https://www.meetuniversity.com/
+Industry classified as 'Study-abroad & admissions consulting' (archetype: edtech-services) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Google Meet
+S1 seed article off-topic, skipped: Meet the Parents
+S1 seed article off-topic, skipped: Meet the Robinsons
+S1 seed article off-topic, skipped: American Association of Political Consultants
+S1 Wikipedia graph: 127 candidate names so far
+S3 news corpus mining (Bing + Google News text): 259 candidate names so far
+S2 listicle mining: 313 candidate names total
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Whatsapp (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Outlookbusiness (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlookmoney (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlooktraveller (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Outlookhindi (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Api (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK BUSINESS (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK MONEY (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK TRAVELLER (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: OUTLOOK TRAVELLER EATS (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Print subscription (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Trading Strategies (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Technical Analysis (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: F&O Expiry Calendar (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Gold Rates Today (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: SIP Calculator (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Spotify (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Healthshots (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Ottplay (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Slurrp (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Htsmartcast (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Fabplay (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Shine (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: हिंदी (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: मराठी (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Download (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Itunes (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Loksatta (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Jansatta (signals: listicle-link, mentions: 1)
+Discovery complete: 0 verified competitors
+Competitor discovery complete: 0 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: edtech-services)
+Signal Stack assembled: 8 sources across Customers / Competitors / Market / Internal
+Interview-named competitor not verified, skipped: AECC
+Interview-named competitor verified and added: Edwise International -> https://edwiseinternational.com (overlap 23)
+Interview-named competitor verified and added: IDP Education -> http://www.idp.com/ (overlap 20)
+Interview-named competitor verified and added: KC Overseas -> https://kcoverseas.com (overlap 14)
+Interview-named competitor verified and added: Leverage Edu -> https://leverageedu.com (overlap 20)
+Interview-named competitor not verified, skipped: Shiksha
+Interview-named competitor verified and added: Yocket -> https://yocket.com (overlap 21)
+Interview-named competitor verified and added: upGrad -> https://upgrad.com (overlap 15)
+Seeded 10 interview answers for MeetUniversity (marked seed, editable in UI); interview-named competitors verified & added: ['Edwise International', 'IDP Education', 'KC Overseas', 'Leverage Edu', 'Yocket', 'upGrad']
+Internal import meetuniversity_support_sample.csv: 16 lines -> 5 pattern records
+[Market] News index: study abroad visa policy changes -> ok: 12 items in feed, 3 new records
+[Market] News index: international student admissions policy -> ok: 11 items in feed, 4 new records
+[Market] News index: Indian students studying abroad trends -> ok: 12 items in feed, 4 new records
+[Market] News index: "MeetUniversity" -> empty: feed returned no items
+[Customers] News index: "MeetUniversity" reviews complaints -> empty: feed returned no items
+[Customers] News index: students study abroad problems complaints -> ok: 10 items in feed, 1 new records
+[Customers] News index: study abroad visa rejection students experienc -> ok: 12 items in feed, 1 new records
+[Internal] MeetUniversity — internal uploads (CRM / support / call no -> ok: internal source: 5 imported records on file
+[Competitors] Edwise International — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Edwise International" -> ok: 3 items in feed, 2 new records
+[Competitors] IDP Education — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "IDP Education" -> ok: 12 items in feed, 4 new records
+[Competitors] KC Overseas — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "KC Overseas" -> ok: 4 items in feed, 0 new records
+[Competitors] Leverage Edu — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Leverage Edu" -> ok: 12 items in feed, 4 new records
+[Competitors] Yocket — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Yocket" -> ok: 9 items in feed, 0 new records
+[Competitors] upGrad — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "upGrad" -> ok: 2 items in feed, 2 new records
+
+===== 2026-11-17T02:30:52+00:00 · setup_research · company=None · success =====
+Fetched homepage https://zerodha.com/ (HTTP 200)
+Fetched internal page https://zerodha.com/about/
+Fetched internal page https://zerodha.com/products/
+Internal page skipped https://zerodha.com/pricing/: ReadTimeout: HTTPSConnectionPool(host='zerodha.com', port=443): Read timed out. (read timeout=20)
+Industry classified as 'Fintech — broking & investing' (archetype: fintech) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Nithin Kamath
+S1 Wikipedia graph: 781 candidate names so far
+S3 news corpus mining (Bing + Google News text): 997 candidate names so far
+S2 listicle mining: 1070 candidate names total
+  candidate not verified, discarded: MTF (signals: listicle-link, news-corpus, mentions: 6)
+  candidate not verified, discarded: Fixed income (signals: listicle-link, wikipedia, mentions: 2)
+  candidate not verified, discarded: Technical analysis (signals: listicle-link, wikipedia, mentions: 2)
+  competitor verified: Kotak Neo -> https://kotakneo.com (overlap 16, via listicle link + homepage verification)
+  candidate not verified, discarded: Loans up to ₹50 LAKHS (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loan Against Mutual Funds (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Gold Loan (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Moneycontrolpay (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Whatsapp (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Loan against MFs (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Nw18 (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Appreciate (signals: listicle-link, mentions: 2)
+Discovery complete: 1 verified competitors
+Competitor discovery complete: 1 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: fintech)
+Signal Stack assembled: 10 sources across Customers / Competitors / Market / Internal
+
+===== 2026-11-17T02:37:26+00:00 · crawl · company=2 · success =====
+Fetched homepage https://zerodha.com/ (HTTP 200)
+Fetched internal page https://zerodha.com/about/
+Fetched internal page https://zerodha.com/products/
+Internal page skipped https://zerodha.com/pricing/: ReadTimeout: HTTPSConnectionPool(host='zerodha.com', port=443): Read timed out. (read timeout=20)
+Industry classified as 'Fintech — broking & investing' (archetype: fintech) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Nithin Kamath
+S1 Wikipedia graph: 781 candidate names so far
+S3 news corpus mining (Bing + Google News text): 997 candidate names so far
+S2 listicle mining: 1070 candidate names total
+  candidate not verified, discarded: MTF (signals: listicle-link, news-corpus, mentions: 6)
+  candidate not verified, discarded: Fixed income (signals: listicle-link, wikipedia, mentions: 2)
+  candidate not verified, discarded: Technical analysis (signals: listicle-link, wikipedia, mentions: 2)
+  competitor verified: Kotak Neo -> https://kotakneo.com (overlap 16, via listicle link + homepage verification)
+  candidate not verified, discarded: Loans up to ₹50 LAKHS (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loan Against Mutual Funds (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Gold Loan (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Moneycontrolpay (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Whatsapp (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Loan against MFs (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Nw18 (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Appreciate (signals: listicle-link, mentions: 2)
+Discovery complete: 1 verified competitors
+Competitor discovery complete: 1 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: fintech)
+Signal Stack assembled: 10 sources across Customers / Competitors / Market / Internal
+Interview-named competitor not verified, skipped: Angel One
+Interview-named competitor verified and added: Dhan -> https://dhan.com (overlap 6)
+Interview-named competitor verified and added: Groww -> https://groww.in (overlap 22)
+Interview-named competitor verified and added: Upstox -> https://upstox.com (overlap 19)
+Seeded 10 interview answers for Zerodha (marked seed, editable in UI); interview-named competitors verified & added: ['Dhan', 'Groww', 'Upstox']
+Internal import zerodha_support_sample.txt: 13 lines -> 3 pattern records
+[Competitors] Kotak Neo — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Kotak Neo" -> ok: 12 items in feed, 4 new records
+[Market] News index: SEBI broking regulations circular -> ok: 11 items in feed, 2 new records
+[Market] News index: retail investors India demat growth -> ok: 10 items in feed, 4 new records
+[Market] News index: stock market India retail participation -> ok: 6 items in feed, 4 new records
+[Market] News index: "Zerodha" -> ok: 12 items in feed, 4 new records
+[Customers] News index: "Zerodha" reviews complaints -> ok: 5 items in feed, 0 new records
+[Customers] News index: traders complaints brokerage app charges -> ok: 7 items in feed, 4 new records
+[Customers] News index: demat account users problems reviews -> ok: 5 items in feed, 1 new records
+[Internal] Zerodha — internal uploads (CRM / support / call notes) -> ok: internal source: 3 imported records on file
+[Competitors] Dhan — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Dhan" -> ok: 12 items in feed, 4 new records
+[Competitors] Groww — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Groww" -> ok: 12 items in feed, 4 new records
+[Competitors] Upstox — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Upstox" -> ok: 12 items in feed, 4 new records
+
+===== 2026-11-17T02:37:50+00:00 · setup_research · company=None · success =====
+Fetched homepage https://www.boat-lifestyle.com/ (HTTP 200)
+Fetched internal page https://www.boat-lifestyle.com/collections/product-personalization
+Fetched internal page https://www.boat-lifestyle.com/pages/installation-login
+Fetched internal page https://www.boat-lifestyle.com/products/boat-airdopes-prime-702-anc
+Industry classified as 'Consumer electronics (D2C audio/wearables)' (archetype: d2c-commerce) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Bo
+S1 seed article off-topic, skipped: BoA
+S1 seed article off-topic, skipped: COROS Wearables Inc
+S1 seed article off-topic, skipped: Lists of brands
+S1 Wikipedia graph: 384 candidate names so far
+S3 news corpus mining (Bing + Google News text): 518 candidate names so far
+S2 listicle mining: 610 candidate names total
+  candidate not verified, discarded: Continue on app with… (signals: listicle-heading, listicle-link, mentions: 2)
+  candidate not verified, discarded: TOI World Desk (signals: listicle-heading, listicle-link, mentions: 2)
+  candidate not verified, discarded: Loans up to ₹50 LAKHS (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loan Against Mutual Funds (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Gold Loan (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Api (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Auto (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Moneycontrolpay (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Timesofindia (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Open App (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Get App (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Etb2B (signals: listicle-link, mentions: 2)
+Discovery complete: 0 verified competitors
+Competitor discovery complete: 0 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: d2c-commerce)
+Signal Stack assembled: 8 sources across Customers / Competitors / Market / Internal
+
+===== 2026-11-17T02:44:19+00:00 · crawl · company=3 · success =====
+Fetched homepage https://www.boat-lifestyle.com/ (HTTP 200)
+Fetched internal page https://www.boat-lifestyle.com/collections/product-personalization
+Fetched internal page https://www.boat-lifestyle.com/pages/installation-login
+Fetched internal page https://www.boat-lifestyle.com/products/boat-airdopes-prime-702-anc
+Industry classified as 'Consumer electronics (D2C audio/wearables)' (archetype: d2c-commerce) from site copy; 6 business-line headings extracted.
+S1 seed article off-topic, skipped: Bo
+S1 seed article off-topic, skipped: BoA
+S1 seed article off-topic, skipped: COROS Wearables Inc
+S1 seed article off-topic, skipped: Lists of brands
+S1 Wikipedia graph: 384 candidate names so far
+S3 news corpus mining (Bing + Google News text): 518 candidate names so far
+S2 listicle mining: 610 candidate names total
+  candidate not verified, discarded: Continue on app with… (signals: listicle-heading, listicle-link, mentions: 2)
+  candidate not verified, discarded: TOI World Desk (signals: listicle-heading, listicle-link, mentions: 2)
+  candidate not verified, discarded: Loans up to ₹50 LAKHS (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loan Against Mutual Funds (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Gold Loan (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Api (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Auto (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Moneycontrolpay (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: Timesofindia (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Open App (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Get App (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Etb2B (signals: listicle-link, mentions: 2)
+Discovery complete: 0 verified competitors
+Competitor discovery complete: 0 verified competitors
+Adaptive interview generated: 10 questions (archetype variant: d2c-commerce)
+Signal Stack assembled: 8 sources across Customers / Competitors / Market / Internal
+Interview-named competitor verified and added: Fire-Boltt -> https://fireboltt.com (overlap 7)
+Interview-named competitor not verified, skipped: JBL
+Interview-named competitor verified and added: Noise -> https://noise.in (overlap 5)
+Interview-named competitor verified and added: Sony -> https://www.sonypictures.com/ (overlap 3)
+Expansion competitor verified and added: Bose -> http://www.bose.com/ (overlap 10)
+Expansion competitor verified and added: Apple -> https://www.apple.com/ (overlap 6)
+Seeded 10 interview answers for boAt (marked seed, editable in UI); interview-named competitors verified & added: ['Fire-Boltt', 'Noise', 'Sony', 'Bose', 'Apple']
+Internal import boat_crm_sample.csv: 12 lines -> 4 pattern records
+[Market] News index: India wearables market growth -> ok: 8 items in feed, 2 new records
+[Market] News index: TWS earbuds market India -> ok: 12 items in feed, 4 new records
+[Market] News index: consumer electronics India demand trends -> ok: 12 items in feed, 4 new records
+[Market] News index: "boAt" -> ok: 8 items in feed, 4 new records
+[Customers] News index: "boAt" reviews complaints -> ok: 9 items in feed, 1 new records
+[Customers] News index: earbuds buyers complaints India -> empty: feed returned no items
+[Customers] News index: smartwatch users problems reviews India -> empty: feed returned no items
+[Internal] boAt — internal uploads (CRM / support / call notes) -> ok: internal source: 4 imported records on file
+[Competitors] Fire-Boltt — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Fire-Boltt" -> ok: 12 items in feed, 2 new records
+[Competitors] Noise — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Noise" -> ok: 10 items in feed, 4 new records
+[Competitors] Sony — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Sony" -> ok: 12 items in feed, 4 new records
+[Competitors] Bose — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Bose" -> ok: 9 items in feed, 4 new records
+[Competitors] Apple — official website -> ok: first crawl: positioning snapshot stored
+[Competitors] News index: "Apple" -> ok: 7 items in feed, 4 new records
+
+===== 2026-11-17T02:44:52+00:00 · monthly_audit · company=None · success =====
+Audit: /home/hatch/workspace/assignments-2026-11-17/edxso-build/output/audits/audit_2026-11-17.md
+
+===== 2026-11-17T02:45:45+00:00 · reassessment · company=2 · success =====
+# Context-change reassessment demo — Zerodha
+
+Change made: growth_focus set to 'options trading education and investor activation'; context notes updated (investor education + activation priority, SEBI derivatives risk).
+
+- FLAGGED STALE: 'News index: "Zerodha" reviews complaints' — its focus no longer matches the updated business context (no overlap with current priorities). Kept in the manager as 'stale', excluded from crawls until re-approved.
+- FLAGGED STALE: 'News index: demat account users problems reviews' — its focus no longer matches the updated business context (no overlap with current priorities). Kept in the manager as 'stale', excluded from crawls until re-approved.
+- ADDED MARKET SOURCE: news index 'options trading education and investor activation fintech' — the new context makes this a first-class watch area.
+
+Discovery log:
+S1 seed article off-topic, skipped: Nithin Kamath
+S1 Wikipedia graph: 781 candidate names so far
+S3 news corpus mining (Bing + Google News text): 977 candidate names so far
+S2 listicle mining: 1050 candidate names total
+  candidate not verified, discarded: MTF (signals: listicle-link, news-corpus, mentions: 6)
+  candidate not verified, discarded: Fixed income (signals: listicle-link, wikipedia, mentions: 2)
+  candidate not verified, discarded: Technical analysis (signals: listicle-link, wikipedia, mentions: 2)
+  competitor verified: Kotak Neo -> https://kotakneo.com (overlap 16, via listicle link + homepage verification)
+  candidate not verified, discarded: Moneycontrolpay (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loans up to ₹50 LAKHS (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Loan Against Mutual Funds (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Gold Loan (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Bit (signals: listicle-link, mentions: 4)
+  candidate not verified, discarded: Whatsapp (signals: listicle-link, mentions: 3)
+  candidate not verified, discarded: हिंदी (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: मराठी (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Loan against MFs (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Nw18 (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Appreciate (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Open (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Terms & conditions (signals: listicle-link, mentions: 2)
+  candidate not verified, discarded: Loksatta (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Jansatta (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Inuth (signals: listicle-link, mentions: 1)
+  candidate not verified, discarded: Ramnath Goenka Awards (signals: listicle-link, mentions: 1)
+Discovery complete: 1 verified competitors

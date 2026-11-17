@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Source Manager</h1>
+<p class="sub">Add, approve, mark stale or remove sources; trigger crawls. Stale/removed sources are excluded from crawls but kept for history.</p>
+
+<div class="card">
+  <h3 style="margin-top:0">Add a source</h3>
+  <form method="post">
+    <input type="hidden" name="action" value="add">
+    <label>Company</label>
+    <select name="company_id">{% for co in all_companies %}<option value="{{ co.id }}">{{ co.name }}</option>{% endfor %}</select>
+    <label>Category</label>
+    <select name="category"><option>Customers</option><option>Competitors</option><option>Market</option><option>Internal</option></select>
+    <label>Type</label>
+    <select name="source_type"><option value="web">web page</option><option value="rss">news-index query (type the query as the name; URL is built automatically)</option></select>
+    <label>Name</label><input type="text" name="name" required>
+    <label>URL (for web pages; ignored for news-index queries)</label><input type="text" name="url">
+    <label>Reason for inclusion</label><input type="text" name="reason">
+    <p><button type="submit">Add source</button></p>
+  </form>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">Run a crawl</h3>
+  <form method="post">
+    <input type="hidden" name="action" value="crawl">
+    <label>Company</label>
+    <select name="company_id">{% for co in all_companies %}<option value="{{ co.id }}">{{ co.name }}</option>{% endfor %}</select>
+    <p><button type="submit">Crawl all approved sources now</button></p>
+  </form>
+</div>
+
+<table>
+  <tr><th>Company</th><th>Source</th><th>Cat.</th><th>Type</th><th>Status</th><th>Health</th><th>Actions</th></tr>
+  {% for s in sources %}
+  <tr>
+    <td>{{ s.company_name }}</td>
+    <td><strong>{{ s.name }}</strong><br><span class="small">{{ s.url }}</span></td>
+    <td>{{ s.category }}</td><td>{{ s.source_type }}</td><td>{{ s.status }}</td>
+    <td class="small">last: {{ s.last_status }}<br>{{ s.last_checked_at[:16] if s.last_checked_at }}<br>records: {{ s.records_total }} · fails: {{ s.fail_count }}</td>
+    <td>
+      <form method="post" style="display:inline"><input type="hidden" name="source_id" value="{{ s.id }}">
+        <button class="secondary" name="action" value="approve">Approve</button></form>
+      <form method="post" style="display:inline"><input type="hidden" name="source_id" value="{{ s.id }}">
+        <button class="secondary" name="action" value="stale">Stale</button></form>
+      <form method="post" style="display:inline"><input type="hidden" name="source_id" value="{{ s.id }}">
+        <button class="danger" name="action" value="remove">Remove</button></form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ company.name }} — Company Intelligence Profile</h1>
+<p class="sub">{{ company.website }} · Industry: <strong>{{ company.industry }}</strong> · Archetype: {{ company.archetype }} · Researched from {{ company.profile.pages_fetched or 1 }} public pages of its own site.</p>
+<p>
+  <a class="btn secondary" href="{{ url_for('company_interview', company_id=company.id) }}">AI Interview</a>
+  <a class="btn secondary" href="{{ url_for('company_stack', company_id=company.id) }}">Signal Stack</a>
+  <a class="btn secondary" href="{{ url_for('company_internal', company_id=company.id) }}">Internal Intelligence</a>
+  <a class="btn" href="{{ url_for('company_brief', company_id=company.id) }}">Monday Morning Brief</a>
+</p>
+
+<div class="card">
+  <h3 style="margin-top:0">Extracted from the company's own website (research)</h3>
+  <p class="small"><strong>Site title:</strong> {{ company.profile.site_title }}<br>
+  <strong>Business-line headings found:</strong> {{ company.profile.business_lines | join(' · ') }}<br>
+  <strong>Keyword profile:</strong> {{ company.profile.keywords | join(', ') }}</p>
+</div>
+
+<form method="post" class="card">
+  <h3 style="margin-top:0">Profile (editable — interview answers flow into these fields)</h3>
+  <label>Industry</label><input type="text" name="industry" value="{{ company.industry }}">
+  <label>Business model</label><textarea name="business_model" rows="2">{{ company.business_model }}</textarea>
+  <label>Product / service summary</label><textarea name="product_summary" rows="2">{{ company.product_summary }}</textarea>
+  <label>Revenue streams</label><textarea name="revenue_streams" rows="2">{{ company.revenue_streams }}</textarea>
+  <label>Target customers</label><textarea name="target_customers" rows="2">{{ company.target_customers }}</textarea>
+  <label>Value proposition — why customers choose this company</label><textarea name="value_prop" rows="2">{{ company.value_prop }}</textarea>
+  <label>Business context notes</label><textarea name="context_notes" rows="3">{{ company.context_notes }}</textarea>
+  <label>Current growth focus (editing this + saving, then running a reassessment, updates the Signal Stack)</label><textarea name="growth_focus" rows="2">{{ company.growth_focus }}</textarea>
+  <p><button type="submit">Save profile</button></p>
+</form>
+
+<h2>Key competitors (derived, not hard-coded)</h2>
+<table>
+  <tr><th>Competitor</th><th>Website</th><th>Why relevant</th></tr>
+  {% for cp in competitors %}
+  <tr><td><strong>{{ cp.name }}</strong></td><td><a href="{{ cp.website }}">{{ cp.website }}</a></td><td class="small">{{ cp.why_relevant }}</td></tr>
+  {% endfor %}
+</table>
+
+<h2>Interview answers on file</h2>
+<div class="card">
+  {% for a in answers %}
+    <p style="margin:8px 0"><strong>{{ a.topic }}.</strong> {{ a.question }}<br>
+    {% if a.answer %}<span>→ {{ a.answer }}</span>{% elif a.skipped %}<span class="small">→ skipped (confidential)</span>{% else %}<span class="small">→ not answered yet</span>{% endif %}</p>
+  {% endfor %}
+</div>
+{% endblock %}

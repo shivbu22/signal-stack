@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ company.name }} — Internal Intelligence</h1>
+<p class="sub">Upload a CRM export, support log or call notes (CSV or TXT). The importer clusters the file into recurring themes — objections, lost-deal reasons, product requests, risks — and creates one intelligence record per theme (2+ mentions), with verbatim lines as evidence.</p>
+<div class="card">
+  <form method="post" enctype="multipart/form-data">
+    <label>File (CSV / TXT)</label>
+    <input type="file" name="file" accept=".csv,.txt" required>
+    <p><button type="submit">Import internal file</button></p>
+  </form>
+  <p class="small">Demo files provided in <code>data/internal_samples/</code> (clearly labelled samples) were imported at seed time.</p>
+</div>
+<h2>Internal records</h2>
+{% for r in records %}
+<div class="card">
+  <p style="margin:0 0 4px"><strong>{{ r.title }}</strong></p>
+  <p class="small">{{ r.stance }} · {{ r.signal_type }} · score {{ r.composite_score }} · {{ r.verified_status }}</p>
+  <p style="margin:0 0 4px"><em>Evidence (verbatim from the file):</em> “{{ r.evidence_snippet }}”</p>
+  <p style="margin:0"><em>Interpretation:</em> {{ r.why_it_matters }}</p>
+</div>
+{% else %}
+<p class="sub">No internal records yet.</p>
+{% endfor %}
+{% endblock %}

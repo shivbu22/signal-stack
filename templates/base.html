@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Signal Stack{% endblock %}</title>
+<style>
+  :root { --ink:#1c2430; --mut:#5b6572; --line:#d8dde3; --bg:#f6f7f8; --accent:#0b5cad; --ok:#1e7a34; --warn:#a85b00; --bad:#b3261e; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:#fff; border-bottom:1px solid var(--line); padding:10px 22px; display:flex; gap:18px; align-items:baseline; flex-wrap:wrap; }
+  header .brand { font-weight:700; font-size:18px; }
+  header .brand span { color:var(--accent); }
+  nav a { color:var(--ink); text-decoration:none; margin-right:14px; font-size:14px; }
+  nav a:hover { color:var(--accent); text-decoration:underline; }
+  main { max-width:1080px; margin:0 auto; padding:22px; }
+  h1 { font-size:22px; margin:0 0 6px; } h2 { font-size:17px; margin:22px 0 8px; } h3 { font-size:15px; margin:16px 0 6px; }
+  .sub { color:var(--mut); font-size:14px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:6px; padding:16px 18px; margin:12px 0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; background:#fff; }
+  th, td { border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top; }
+  th { background:#eef1f4; }
+  .tag { display:inline-block; border:1px solid var(--line); border-radius:20px; padding:1px 9px; font-size:12px; background:#fff; }
+  .stance-threat { color:var(--bad); font-weight:600; } .stance-opportunity { color:var(--ok); font-weight:600; }
+  .status-success { color:var(--ok); } .status-failed { color:var(--bad); } .status-partial { color:var(--warn); }
+  .flash { background:#eaf3fe; border:1px solid #b9d4f5; padding:10px 14px; border-radius:6px; margin:8px 0; font-size:14px; }
+  input[type=text], input[type=url], input[type=date], input[type=time], input[type=number], select, textarea { width:100%; padding:8px; border:1px solid var(--line); border-radius:4px; font:inherit; font-size:14px; }
+  label { font-size:13px; color:var(--mut); display:block; margin:10px 0 4px; }
+  button, .btn { background:var(--accent); color:#fff; border:0; border-radius:4px; padding:8px 14px; font-size:14px; cursor:pointer; text-decoration:none; display:inline-block; }
+  button.secondary, .btn.secondary { background:#fff; color:var(--ink); border:1px solid var(--line); }
+  button.danger { background:var(--bad); }
+  .small { font-size:12.5px; color:var(--mut); }
+  .brief-body { background:#fff; border:1px solid var(--line); border-radius:6px; padding:20px 26px; font-size:14.5px; line-height:1.55; overflow-wrap:anywhere; }
+  .brief-body table { font-size:12.5px; }
+  pre.log { background:#11181f; color:#d7e0ea; padding:12px; border-radius:6px; font-size:12px; overflow:auto; max-height:340px; white-space:pre-wrap; }
+  .score { font-variant-numeric: tabular-nums; }
+  details summary { cursor:pointer; font-size:13px; color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Signal<span>Stack</span></div>
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('setup') }}">Company Setup</a>
+    <a href="{{ url_for('feed') }}">Intelligence Feed</a>
+    <a href="{{ url_for('sources_manager') }}">Source Manager</a>
+    <a href="{{ url_for('runs') }}">Run History</a>
+    <a href="{{ url_for('audits') }}">Audits</a>
+    <a href="{{ url_for('settings') }}">Settings</a>
+  </nav>
+  <nav>
+    {% for co in all_companies %}
+      <a href="{{ url_for('company_profile', company_id=co.id) }}">{{ co.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
+<main>
+  {% with messages = get_flashed_messages() %}
+    {% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</main>
+</body>
+</html>

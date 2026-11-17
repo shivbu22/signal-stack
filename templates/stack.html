@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ company.name }} — Signal Stack</h1>
+<p class="sub">Every source carries a written justification (Specific · Recent · Credible). Competitors were derived by research at setup time — see the derivation evidence.</p>
+<form method="post" action="{{ url_for('company_reassess', company_id=company.id) }}" class="card">
+  <strong>Context changed?</strong>
+  <span class="small">If the business context or growth focus on the profile has changed, reassess: the system re-runs discovery, flags sources that no longer fit as stale, adds newly relevant ones, and explains each change in Run History.</span>
+  <p><button type="submit">Run reassessment</button></p>
+</form>
+
+<h2>Competitors ({{ competitors | length }})</h2>
+<table>
+  <tr><th>Name</th><th>Site</th><th>Why relevant</th><th>Derivation evidence</th></tr>
+  {% for cp in competitors %}
+  <tr><td><strong>{{ cp.name }}</strong></td><td><a href="{{ cp.website }}">{{ cp.website }}</a></td>
+      <td class="small">{{ cp.why_relevant }}</td><td class="small">{{ cp.derivation_evidence }}</td></tr>
+  {% endfor %}
+</table>
+
+{% for cat, sources in by_cat.items() %}
+<h2>{{ cat }} — {{ sources | length }} source(s)</h2>
+<table>
+  <tr><th>Source</th><th>Type</th><th>Status</th><th>Reason for inclusion</th><th>Justification</th><th>Health</th></tr>
+  {% for s in sources %}
+  <tr>
+    <td><strong>{{ s.name }}</strong><br><span class="small">{{ s.url }}</span></td>
+    <td>{{ s.source_type }}</td><td>{{ s.status }}</td>
+    <td class="small">{{ s.reason }}</td>
+    <td class="small">{{ s.justification_specific }}<br>{{ s.justification_recent }}<br>{{ s.justification_credible }}</td>
+    <td class="small">last: {{ s.last_status }}<br>records: {{ s.records_total }}<br>fails: {{ s.fail_count }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endfor %}
+{% endblock %}

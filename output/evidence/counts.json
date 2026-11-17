@@ -1,0 +1,57 @@
+{
+  "MeetUniversity": {
+    "sources_approved": 20,
+    "competitors": 6,
+    "records_total": 36,
+    "records_by_category": {
+      "Competitors": 18,
+      "Customers": 2,
+      "Internal": 5,
+      "Market": 11
+    },
+    "crawl_stats_last_run": {
+      "sources": 20,
+      "new_records": 31,
+      "errors": 0,
+      "empty": 2
+    },
+    "brief_file": "/home/hatch/workspace/assignments-2026-11-17/edxso-build/output/briefs/meetuniversity_monday_brief_2026-11-17.md"
+  },
+  "Zerodha": {
+    "sources_approved": 16,
+    "competitors": 4,
+    "records_total": 42,
+    "records_by_category": {
+      "Competitors": 20,
+      "Customers": 5,
+      "Internal": 3,
+      "Market": 14
+    },
+    "crawl_stats_last_run": {
+      "sources": 16,
+      "new_records": 39,
+      "errors": 0,
+      "empty": 0
+    },
+    "brief_file": "/home/hatch/workspace/assignments-2026-11-17/edxso-build/output/briefs/zerodha_monday_brief_2026-11-17.md"
+  },
+  "boAt": {
+    "sources_approved": 18,
+    "competitors": 5,
+    "records_total": 42,
+    "records_by_category": {
+      "Competitors": 23,
+      "Customers": 1,
+      "Internal": 4,
+      "Market": 14
+    },
+    "crawl_stats_last_run": {
+      "sources": 18,
+      "new_records": 38,
+      "errors": 0,
+      "empty": 2
+    },
+    "brief_file": "/home/hatch/workspace/assignments-2026-11-17/edxso-build/output/briefs/boat_monday_brief_2026-11-17.md"
+  },
+  "_total_records": 120
+}

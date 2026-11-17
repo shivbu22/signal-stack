@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Settings — Automation Schedule</h1>
+<p class="sub">The schedule lives in <code>schedule.json</code>. The jobs are plain Python scripts — activate them on any server with the cron lines shown, or trigger them manually any time (Settings → buttons below, or the Audits page).</p>
+<form method="post" class="card">
+  <h3 style="margin-top:0">Weekly Intelligence Brief</h3>
+  <label>Day</label>
+  <select name="weekly_day">{% for d in ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'] %}<option {{ 'selected' if schedule.weekly_brief.day == d }}>{{ d }}</option>{% endfor %}</select>
+  <label>Time</label><input type="time" name="weekly_time" value="{{ schedule.weekly_brief.time }}">
+  <p class="small">{{ schedule.weekly_brief.description }}<br>Cron: <code>{{ schedule.weekly_brief.cron }} cd /path/to/edxso-build &amp;&amp; python3 run_weekly.py</code></p>
+  <h3>Monthly Signal Stack Audit</h3>
+  <label>Day of month</label><input type="number" name="audit_day" min="1" max="28" value="{{ schedule.monthly_audit.day_of_month }}">
+  <label>Time</label><input type="time" name="audit_time" value="{{ schedule.monthly_audit.time }}">
+  <p class="small">{{ schedule.monthly_audit.description }}<br>Cron: <code>{{ schedule.monthly_audit.cron }} cd /path/to/edxso-build &amp;&amp; python3 run_monthly_audit.py</code></p>
+  <p><button type="submit">Save schedule</button></p>
+</form>
+
+<h2>Recent automation runs</h2>
+<table>
+  <tr><th>When</th><th>Job</th><th>Status</th></tr>
+  {% for r in last_runs %}
+  <tr><td>{{ r.started_at[:16] }}</td><td>{{ r.kind }}</td><td class="status-{{ r.status }}">{{ r.status }}</td></tr>
+  {% else %}
+  <tr><td colspan="3" class="small">No automation runs yet.</td></tr>
+  {% endfor %}
+</table>
+<p class="small">Failed runs appear here and in Run History with their full log — visibly, never silently.</p>
+{% endblock %}

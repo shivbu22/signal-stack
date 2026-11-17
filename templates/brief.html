@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ company.name }} — Monday Morning Brief</h1>
+<p class="sub">Generated only from collected, linked evidence. Empty categories say so explicitly — nothing is manufactured.</p>
+<form method="post" class="card">
+  <button type="submit" name="generate" value="1">Regenerate brief</button>
+  <button type="submit" name="crawl_first" value="1" class="secondary">Crawl first, then regenerate</button>
+  {% if latest %}<span class="small">Last generated: {{ latest.generated_at[:16] }} · saved at {{ latest.file_path }}</span>{% endif %}
+</form>
+
+{% if history %}
+<p class="small">Brief history: {% for b in history %}{{ b.generated_at[:10] }} ({{ b.period_label }}){% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endif %}
+
+{% if latest %}
+<div class="brief-body">{{ latest.content_md | md | safe }}</div>
+{% else %}
+<div class="card"><p>No brief yet. Run a crawl from the Source Manager, then regenerate.</p></div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Company Setup</h1>
+<p class="sub">Enter a company name and its public website. The system will research the site, derive its competitors from category listicles (verified against each candidate's own homepage), generate a company-specific 10-question founder interview, and assemble a justified Signal Stack. This takes under a minute — it is doing real fetching.</p>
+<div class="card">
+  <form method="post">
+    <label>Company name</label>
+    <input type="text" name="name" required placeholder="e.g. MeetUniversity">
+    <label>Website</label>
+    <input type="text" name="website" required placeholder="e.g. https://www.meetuniversity.com">
+    <p><button type="submit">Research &amp; build Signal Stack</button></p>
+  </form>
+</div>
+<p class="small">Only public pages are fetched. robots.txt is respected, requests are rate-limited, and no authentication or paywall is ever bypassed.</p>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>{{ company.name }} — Adaptive AI Interview</h1>
+<p class="sub">Ten questions generated from {{ company.name }}'s own researched profile (archetype: {{ company.archetype }}) — a different company gets different questions. One question at a time; answers are remembered, follow-ups are generated from your answers, and confidential questions can be skipped. Answers marked “seed” are editable demo answers.</p>
+
+{% if current %}
+<div class="card" style="border-color:var(--accent)">
+  <p class="small">CURRENT QUESTION · topic: {{ current.topic }}</p>
+  <p style="font-size:16px"><strong>{{ current.question }}</strong></p>
+  <form method="post">
+    <input type="hidden" name="question_id" value="{{ current.id }}">
+    <textarea name="answer" rows="3" placeholder="Your answer…"></textarea>
+    <p><button type="submit">Save answer</button>
+       <button type="submit" name="skip" value="1" class="secondary">Skip (confidential)</button></p>
+  </form>
+</div>
+{% else %}
+<div class="card"><p>All main questions are answered or skipped. You can still edit any answer below — the profile and the ranking update accordingly.</p></div>
+{% endif %}
+
+<h2>All questions &amp; answers</h2>
+{% for q in questions %}
+<div class="card" style="{{ 'margin-left:34px;' if q.is_followup }}">
+  <p class="small">{{ '↳ Follow-up · ' if q.is_followup }}topic: {{ q.topic }}{% if q.seed_answer %} · <strong>seed answer (demo)</strong>{% endif %}{% if q.skipped %} · skipped{% endif %}</p>
+  <p><strong>{{ q.question }}</strong></p>
+  <form method="post">
+    <input type="hidden" name="question_id" value="{{ q.id }}">
+    <textarea name="answer" rows="2">{{ q.answer }}</textarea>
+    <p><button type="submit" class="secondary">Save / update</button>
+       <button type="submit" name="skip" value="1" class="secondary">Skip</button></p>
+  </form>
+</div>
+{% endfor %}
+{% endblock %}

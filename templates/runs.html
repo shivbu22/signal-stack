@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Run History &amp; Logs</h1>
+<p class="sub">Every setup, crawl, weekly brief, audit, reassessment and import — including failures — is recorded here. Nothing fails silently.</p>
+<table>
+  <tr><th>Started</th><th>Kind</th><th>Company</th><th>Status</th><th>Finished</th><th>Log</th></tr>
+  {% for r in runs %}
+  <tr>
+    <td>{{ r.started_at[:16] }}</td><td>{{ r.kind }}</td><td>{{ r.company_name or '—' }}</td>
+    <td class="status-{{ r.status }}">{{ r.status }}</td><td>{{ (r.finished_at or '')[:16] }}</td>
+    <td><details><summary>view log</summary><pre class="log">{{ r.log }}</pre></details></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

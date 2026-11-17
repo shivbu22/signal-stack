@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Monthly Signal Stack Audits</h1>
+<p class="sub">Dead URLs, duplicates, inactive sources, declining relevance and newly discovered candidates — with add/remove recommendations.</p>
+<form method="post" class="card"><button type="submit">Run audit now</button>
+  {% if history %}<span class="small">Previous audits: {% for a in history %}{{ a.generated_at[:10] }}{% if not loop.last %} · {% endif %}{% endfor %}</span>{% endif %}
+</form>
+{% if latest %}
+<div class="brief-body">{{ latest.report_md | md | safe }}</div>
+{% else %}
+<div class="card"><p>No audit has run yet.</p></div>
+{% endif %}
+{% endblock %}
